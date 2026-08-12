@@ -1,0 +1,16 @@
+{
+  "name": "school-inspection-monitoring-system",
+  "version": "1.0.0",
+  "description": "School Inspection Monitoring System for Tamil Nadu Education Department",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently \"npm --prefix frontend run dev\" \"npm --prefix backend run dev\"",
+    "frontend": "npm --prefix frontend run dev",
+    "backend": "npm --prefix backend run dev",
+    "build": "npm --prefix frontend run build && npm --prefix backend run build",
+    "install-all": "npm install && npm --prefix frontend install && npm --prefix backend install"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.0"
+  }
+}
